@@ -67,10 +67,10 @@ void setup()
   gw.sendSketchInfo(SN, SV);				
        
   // Register sensors (id, type, description, ack back)
-  gw.present(RED_PIN, S_DIMMER, "present RED light", false);
-  gw.present(GREEN_PIN, S_DIMMER, "present GREEN light", false);
-  gw.present(BLUE_PIN, S_DIMMER, "present BLUE light", false);
-  gw.present(0, S_LIGHT, "present Show button", false);
+  gw.present(RED_PIN, S_DIMMER, "RED light", false);
+  gw.present(GREEN_PIN, S_DIMMER, "GREEN light", false);
+  gw.present(BLUE_PIN, S_DIMMER, "BLUE light", false);
+  gw.present(0, S_LIGHT, "RGB Color cycle", false);
 
   // Define pin mode (pin number, type)
   pinMode(RED_PIN, OUTPUT);		
